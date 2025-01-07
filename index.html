@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Asking her</title>
+</head>
+<body>
+<div class="container">
+<div>
+    <h1 class="text">agr 2% b pyar krti h to </h1>
+    <h1 class="text">devanshu 19 ko aega?</h1>
+</div>
+<div class="gif_container">
+       <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjZ1OTQzZmt2bTlzOTNoYWxvZGN0a2cxMTF1bzZibTJ0czhxcDlyMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Movie GIF">
+</div>
+<div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+</div>
+</div>
+
+<script>
+    function nextPage() {
+        window.location.href="yes.html";
+    }
+
+    function moveButton() {
+        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 70;
+        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 40;
+        document.getElementById('noButton').style.left = x + 'px';
+        document.getElementById('noButton').style.top = y + 'px';
+    }
+</script>
+</body>
+</html>
